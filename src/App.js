@@ -9,7 +9,6 @@ function App() {
   const addRecipe = (recipe) => setRecipes([...recipes, recipe]);
   const deleteRecipe = (event) => {
     const id = event.target.parentNode.id;
-    console.log(id);
     setRecipes((currentRecipes) => currentRecipes.filter((recipe, index) => index != id));
   }
 
